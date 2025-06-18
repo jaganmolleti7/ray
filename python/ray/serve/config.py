@@ -128,6 +128,7 @@ class AutoscalingConfig(BaseModel):
 
     @classmethod
     def default(cls):
+        """The default() method provides an opinionated, production-ready configuration that's more suitable for real-world usage."""
         return cls(
             target_ongoing_requests=DEFAULT_TARGET_ONGOING_REQUESTS,
             min_replicas=1,
